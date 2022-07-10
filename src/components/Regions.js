@@ -5,7 +5,7 @@ class Regions extends React.Component {
         return (
             <div className="regions">
                 <p>Regions!</p>
-                <button className="ne-plants">Northeast</button>
+                <button className="ne-plants" onClick={this.props.loadNePlants}>Northeast</button>
                 <button className="nw-plants">Northwest</button>
                 <button className="se-plants">Southeast</button>
                 <button className="sw-plants">Southwest</button>
