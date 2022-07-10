@@ -57,3 +57,5 @@ const nePlants = {
     },
 
 }
+
+export default nePlants;
