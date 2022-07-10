@@ -3,7 +3,9 @@ import React from "react";
 class Plants extends React.Component {
     render() {
         return (
-            <p>Plants!!!</p>
+            <div className="plants">
+                <p>Plants!!!</p>
+            </div>
         )
     }
 }

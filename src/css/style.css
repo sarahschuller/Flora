@@ -1,3 +1,51 @@
 .app {
     display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.regions {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: black solid;
+}
+
+.plants-list {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: black solid;
+}
+
+.plants {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: black solid;
+}
+
+.ne-plants {
+    margin: 10px;
+    padding: 10px;
+}
+
+.nw-plants {
+    margin: 10px;
+    padding: 10px;
+}
+
+.se-plants {
+    margin: 10px;
+    padding: 10px;
+}
+
+.sw-plants {
+    margin: 10px;
+    padding: 10px;
 }
