@@ -1,8 +1,12 @@
 import React from "react";
+import Header from "./Header";
 import Regions from "./Regions";
-import PlantsList from "./PlantsList";
-import Plants from "./Plants";
+import PlantList from "./PlantList";
 import nePlants from "../ne-plants";
+import nwPlants from "../nw-plants";
+import sePlants from "../se-plants";
+import swPlants from "../sw-plants";
+
 
 class App extends React.Component {
   state = {
@@ -13,14 +17,35 @@ class App extends React.Component {
     this.setState({ plants: nePlants });
   };
 
+  loadNwPlants = () => {
+    this.setState({ plants: nwPlants });
+  };
+
+  loadSePlants = () => {
+    this.setState({ plants: sePlants });
+  };
+
+  loadSwPlants = () => {
+    this.setState({ plants: swPlants });
+  };
+
   render () {
     return (
       <div className="app">
+        <div className="region-selection">
+      <Header />
       <Regions 
         loadNePlants={this.loadNePlants}
+        loadNwPlants={this.loadNwPlants}
+        loadSePlants={this.loadSePlants}
+        loadSwPlants={this.loadSwPlants}
         />
-      <PlantsList />
-      <Plants />
+        </div>
+      <div className="plant-list">
+        <ul className="plant">
+          {Object.keys(this.state.plants).map(key => <PlantList key={key} details={this.state.plants[key]}/>)}
+        </ul>
+      </div>
       </div>
     )
   }

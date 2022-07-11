@@ -5,25 +5,14 @@
     padding: 20px;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
+
 .regions {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: black solid;
-}
-
-.plants-list {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: black solid;
-}
-
-.plants {
-    display: flex;
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -48,4 +37,13 @@
 .sw-plants {
     margin: 10px;
     padding: 10px;
+}
+
+.plant-list {
+    list-style: none;
+}
+
+.plant-list img {
+    display: flex;
+    width: 200px;
 }

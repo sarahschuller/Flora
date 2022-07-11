@@ -2,7 +2,7 @@ const nePlants = {
 
     plant1: {
         name: "Arugula",
-        image: "/images/arugaula.jpg",
+        image: "/images/arugula.jpg",
         desc: "Fresh arugula leaves have a distinctive spicy kick that will turn up flavors in your salads, pastas, sandwiches, and sauces.",
         months: ["March", "April", "May", "June", "July", "August"] ,
     },
