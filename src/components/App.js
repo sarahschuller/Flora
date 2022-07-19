@@ -32,8 +32,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="wrapper">
+        <Header />
         <div className="region-selection">
-      <Header />
       <Regions 
         loadNePlants={this.loadNePlants}
         loadNwPlants={this.loadNwPlants}

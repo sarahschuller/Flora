@@ -1,5 +1,6 @@
 .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 20px;
     padding: 20px;
@@ -8,6 +9,14 @@
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
 }
 
 .regions {
@@ -46,4 +55,11 @@
 .plant-list img {
     display: flex;
     width: 200px;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    padding: 20px;
+    margin: 20px;
 }
